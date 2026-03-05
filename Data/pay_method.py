@@ -2,8 +2,10 @@ from dataclasses import dataclass
 
 from details import details
 
+from Enums.pay_methods import Pay_Methods
+
 
 @dataclass
-class Customer_Data:
-    owner: str
+class Pay_Method:
+    type: Pay_Methods
     details: details
